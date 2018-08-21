@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "8c4f2897-40b5-41fa-9cfd-af527fec4205",
+		"name": "Test project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Todo",
+			"item": [
+				{
+					"name": "Get todo items list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"subject\": \"Test subject\"\n}"
+						},
+						"url": {
+							"raw": "{{API_URL}}/todo",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"todo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ger single todo item",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"subject\": \"Test subject\"\n}"
+						},
+						"url": {
+							"raw": "{{API_URL}}/todo?id=MOvDhg7zkjbJtJ0umLbo",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"todo"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "MOvDhg7zkjbJtJ0umLbo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create todo item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"subject\": \"Test subject\"\n}"
+						},
+						"url": {
+							"raw": "{{API_URL}}/todo",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"todo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update todo item",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"completed\": true\n}"
+						},
+						"url": {
+							"raw": "{{API_URL}}/todo?id=N2gRjIGgPOZOJqDjavZX",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"todo"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "N2gRjIGgPOZOJqDjavZX"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete todo item",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"completed\": true\n}"
+						},
+						"url": {
+							"raw": "{{API_URL}}/todo?id=fwlsRNyfPsZ7NmlojX1k",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"todo"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "fwlsRNyfPsZ7NmlojX1k"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
